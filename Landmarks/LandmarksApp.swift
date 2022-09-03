@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-@main
-struct LandmarksApp: App {
-    var body: some Scene {
+@main // <- The App's entry point.
+struct LandmarksApp: App { // The protocol that any App using the SwiftUI app life cycle must conform to.
+    var body: some Scene { // Returns one or more scenes.
         WindowGroup {
             ContentView()
         }
