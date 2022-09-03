@@ -13,6 +13,12 @@
 		8FCDC6EF28C32A0A00FFD20D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FCDC6EE28C32A0A00FFD20D /* Preview Assets.xcassets */; };
 		8FCDC6F628C32F0A00FFD20D /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCDC6F528C32F0A00FFD20D /* CircleImage.swift */; };
 		8FCDC6F828C3319C00FFD20D /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCDC6F728C3319C00FFD20D /* MapView.swift */; };
+		8FCDC6FA28C348CA00FFD20D /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 8FCDC6F928C348CA00FFD20D /* landmarkData.json */; };
+		8FCDC6FC28C348E300FFD20D /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCDC6FB28C348E300FFD20D /* Landmark.swift */; };
+		8FCDC6FE28C34ABB00FFD20D /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCDC6FD28C34ABB00FFD20D /* ModelData.swift */; };
+		8FCDC70328C34C8D00FFD20D /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCDC70228C34C8D00FFD20D /* LandmarkRow.swift */; };
+		8FCDC70528C34EA200FFD20D /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCDC70428C34EA200FFD20D /* LandmarkList.swift */; };
+		8FCDC70728C3505D00FFD20D /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCDC70628C3505D00FFD20D /* LandmarkDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +29,12 @@
 		8FCDC6EE28C32A0A00FFD20D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8FCDC6F528C32F0A00FFD20D /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		8FCDC6F728C3319C00FFD20D /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		8FCDC6F928C348CA00FFD20D /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
+		8FCDC6FB28C348E300FFD20D /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
+		8FCDC6FD28C34ABB00FFD20D /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		8FCDC70228C34C8D00FFD20D /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
+		8FCDC70428C34EA200FFD20D /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
+		8FCDC70628C3505D00FFD20D /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +68,9 @@
 			isa = PBXGroup;
 			children = (
 				8FCDC6E728C32A0800FFD20D /* LandmarksApp.swift */,
-				8FCDC6E928C32A0800FFD20D /* ContentView.swift */,
-				8FCDC6F528C32F0A00FFD20D /* CircleImage.swift */,
-				8FCDC6F728C3319C00FFD20D /* MapView.swift */,
+				8FCDC6FF28C34C2000FFD20D /* Views */,
+				8FCDC70028C34C2900FFD20D /* Model */,
+				8FCDC70128C34C3800FFD20D /* Resources */,
 				8FCDC6EB28C32A0A00FFD20D /* Assets.xcassets */,
 				8FCDC6ED28C32A0A00FFD20D /* Preview Content */,
 			);
@@ -71,6 +83,36 @@
 				8FCDC6EE28C32A0A00FFD20D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8FCDC6FF28C34C2000FFD20D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8FCDC6E928C32A0800FFD20D /* ContentView.swift */,
+				8FCDC6F528C32F0A00FFD20D /* CircleImage.swift */,
+				8FCDC6F728C3319C00FFD20D /* MapView.swift */,
+				8FCDC70428C34EA200FFD20D /* LandmarkList.swift */,
+				8FCDC70228C34C8D00FFD20D /* LandmarkRow.swift */,
+				8FCDC70628C3505D00FFD20D /* LandmarkDetail.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8FCDC70028C34C2900FFD20D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8FCDC6FD28C34ABB00FFD20D /* ModelData.swift */,
+				8FCDC6FB28C348E300FFD20D /* Landmark.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8FCDC70128C34C3800FFD20D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8FCDC6F928C348CA00FFD20D /* landmarkData.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,6 +175,7 @@
 			files = (
 				8FCDC6EF28C32A0A00FFD20D /* Preview Assets.xcassets in Resources */,
 				8FCDC6EC28C32A0A00FFD20D /* Assets.xcassets in Resources */,
+				8FCDC6FA28C348CA00FFD20D /* landmarkData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,7 +189,12 @@
 				8FCDC6EA28C32A0800FFD20D /* ContentView.swift in Sources */,
 				8FCDC6F828C3319C00FFD20D /* MapView.swift in Sources */,
 				8FCDC6E828C32A0800FFD20D /* LandmarksApp.swift in Sources */,
+				8FCDC70528C34EA200FFD20D /* LandmarkList.swift in Sources */,
+				8FCDC70728C3505D00FFD20D /* LandmarkDetail.swift in Sources */,
 				8FCDC6F628C32F0A00FFD20D /* CircleImage.swift in Sources */,
+				8FCDC6FC28C348E300FFD20D /* Landmark.swift in Sources */,
+				8FCDC70328C34C8D00FFD20D /* LandmarkRow.swift in Sources */,
+				8FCDC6FE28C34ABB00FFD20D /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +323,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Landmarks/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -303,6 +352,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Landmarks/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
